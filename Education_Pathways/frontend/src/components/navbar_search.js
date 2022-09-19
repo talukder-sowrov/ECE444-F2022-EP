@@ -61,9 +61,9 @@ export default class NavbarComp extends Component {
                 <Nav.Link as={Link} to="/search">
                   Search
                 </Nav.Link>
-
-                
-
+                <Nav.Link as={Link} to="/sowrov">
+                  ECE444-Lab1
+                </Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
@@ -77,7 +77,9 @@ export default class NavbarComp extends Component {
               path="/courseDetails/:code"
               render={props =>(<CourseDescriptionPage {...props} />)}>
             </Route>
-            
+            <Route path="/sowrov">
+              <div>Sowrov Talukder</div>
+            </Route>
             <Route path="/">
               <SearchResultDisplay />
             </Route>
